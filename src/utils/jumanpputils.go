@@ -29,3 +29,7 @@ func IsAcceptableCharacter(e string) bool {
     }
     return true
 }
+
+func IsSpace(e string) bool {
+    return strings.HasPrefix(e, "　")
+}
