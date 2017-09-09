@@ -4,8 +4,8 @@ import (
   "strings"
   "bytes"
 
-  "utils"
-  "command"
+  "app/utils"
+  "app/command"
 )
 
 func ToFuriganaText(input string) string {

@@ -1,0 +1,23 @@
+
+version: '2'
+services:
+
+  juman:
+    image: go-jumanpp:latest
+    volumes:
+      - .:/go/src/
+    working_dir: /go/src/app
+    command: go run server.go
+    container_name: server-juman
+    depends_on:
+      - db
+    links:
+      - db
+
+  db:
+    image: mongo:3.3
+    container_name: server-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./backup:/backup:rw

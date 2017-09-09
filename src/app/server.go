@@ -9,7 +9,7 @@ import (
     "github.com/julienschmidt/httprouter"
     "github.com/rs/cors"
     "gopkg.in/mgo.v2"
-    "controllers"
+    "app/controllers"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 
 func getSession() *mgo.Session {
     // Connect to our local mongo
-    dbPlace := "mongodb://localhost"
+    dbPlace := "mongodb://db:27017"
     s, err := mgo.Dial(dbPlace)
 
     // Check if connection error, is mongo running?

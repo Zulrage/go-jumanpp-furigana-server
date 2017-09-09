@@ -5,7 +5,7 @@ import (
   "io"
   "bytes"
 
-	"utils"
+	"app/utils"
 )
 
 func GetKnpCommand(input string) []string {

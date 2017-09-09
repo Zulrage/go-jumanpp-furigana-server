@@ -6,8 +6,8 @@ import (
     "net/http"
 
     "github.com/julienschmidt/httprouter"
-    "models"
-    "jumanpp"
+    "app/models"
+    "app/jumanpp"
     "gopkg.in/mgo.v2"
     "gopkg.in/mgo.v2/bson"
 )
